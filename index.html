@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Fardos Dental Equipment</title>
+<meta name="description" content="Al Fardos supplies dental clinics with chairs, imaging, sterilization, handpieces and consumables.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top"><span class="mark">F</span> Al Fardos</a>
+  <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="menu">
+    <a href="#products">Products</a>
+    <a href="#why">Why Al Fardos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Everything your dental clinic needs, from chair to autoclave.</h1>
+      <p>Al Fardos supplies dentists with reliable equipment, genuine consumables, and installation support after the sale.</p>
+      <div class="actions">
+        <a class="btn primary" href="#products">Browse products</a>
+        <a class="btn ghost" href="#contact">Request a quote</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 200 240" role="img">
+        <path d="M100 20c-28-18-72-6-72 42 0 30 12 44 18 76 5 26 8 72 24 72 14 0 10-46 30-46s16 46 30 46c16 0 19-46 24-72 6-32 18-46 18-76 0-48-44-60-72-42z" fill="#fff" stroke="#0a4fb3" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M70 70c10 12 50 12 60 0" fill="none" stroke="#7fb2ff" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <h2>Equipment by category</h2>
+    <div class="filters" role="tablist">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="chairs">Chairs</button>
+      <button class="chip" data-filter="imaging">Imaging</button>
+      <button class="chip" data-filter="sterilization">Sterilization</button>
+      <button class="chip" data-filter="instruments">Instruments</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="why" class="section band">
+    <h2>Why clinics choose Al Fardos</h2>
+    <ul class="reasons">
+      <li><strong>Certified equipment</strong>Every device ships with manufacturer warranty and documentation.</li>
+      <li><strong>Installation and training</strong>Our technicians set up the unit and train your staff on site.</li>
+      <li><strong>Fast spare parts</strong>Common parts stay in stock so your clinic stays open.</li>
+      <li><strong>Clear pricing</strong>Written quotes with no hidden fees, including delivery.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Request a quote</h2>
+    <p class="lead">Tell us what you need and we will reply within one working day.</p>
+    <form id="quote" novalidate>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>What do you need?<textarea name="msg" rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Send request</button>
+      <p id="status" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Al Fardos Dental Equipment. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
